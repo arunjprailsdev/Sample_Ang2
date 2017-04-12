@@ -8,13 +8,19 @@ import {HttpService} from './http-service';
 })
 export class HttpServiceComponent implements OnInit {
 
- users = [];
-  title = "see";
-  constructor(private _UserService: HttpService) { }
+//  users = [];
+getData: string;
+  title = "from http service componenets";
+  constructor(private _httpService: HttpService) { }
 
   ngOnInit() {
-    this._UserService.getAuthors()
-     .subscribe(resUserData => this.users = resUserData);
+    this._httpService.getAuthors()
+    //  .subscribe(resUserData => this.users = resUserData);
+    .subscribe(
+      data => this.getData = JSON.stringify(data),
+      error => alert(error),
+      () => console.log("finished")
+    )
   }
 //  title = "service";
 //  vals;
