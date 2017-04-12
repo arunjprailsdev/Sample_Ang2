@@ -5,6 +5,8 @@ import { SetupComponent } from './setup/setup.component';
 import { ProductComponent } from './product/product.component';
 import { ManufacturerComponent } from './manufacturer/manufacturer.component';
 import { FaqComponent } from './faq/faq.component';
+import { TestServiceComponent } from './test-service/test-service.component';
+import { HttpServiceComponent } from './http-service/http-service.component';
 
 export const Approute:Routes = [
     {
@@ -30,5 +32,15 @@ export const Approute:Routes = [
         {
         path : 'faq',
         component : FaqComponent
+    }
+    ,
+        {
+        path : 'testservice',
+        component : TestServiceComponent
+    }
+       ,
+        {
+        path : 'httpservice',
+        component : HttpServiceComponent
     }
  ];

@@ -14,6 +14,8 @@ import { SetupComponent } from './setup/setup.component';
 import { ProductComponent } from './product/product.component';
 import { ManufacturerComponent } from './manufacturer/manufacturer.component';
 import { FaqComponent } from './faq/faq.component';
+import { TestServiceComponent } from './test-service/test-service.component';
+import { HttpServiceComponent } from './http-service/http-service.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { FaqComponent } from './faq/faq.component';
     SetupComponent,
     ProductComponent,
     ManufacturerComponent,
-    FaqComponent
+    FaqComponent,
+    TestServiceComponent,
+    HttpServiceComponent
   ],
   imports: [
     BrowserModule,
