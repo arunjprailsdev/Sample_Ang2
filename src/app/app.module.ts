@@ -16,6 +16,11 @@ import { ManufacturerComponent } from './manufacturer/manufacturer.component';
 import { FaqComponent } from './faq/faq.component';
 import { TestServiceComponent } from './test-service/test-service.component';
 import { HttpServiceComponent } from './http-service/http-service.component';
+import { RailsAngComponent } from './rails-ang/rails-ang.component';
+import { PostComponent } from './post/post.component';
+import { NrComponent } from './nr/nr.component';
+import { RemapComponent } from './remap/remap.component';
+import { RdrComponent } from './rdr/rdr.component';
 
 
 @NgModule({
@@ -30,7 +35,12 @@ import { HttpServiceComponent } from './http-service/http-service.component';
     ManufacturerComponent,
     FaqComponent,
     TestServiceComponent,
-    HttpServiceComponent
+    HttpServiceComponent,
+    RailsAngComponent,
+    PostComponent,
+    NrComponent,
+    RemapComponent,
+    RdrComponent
   ],
   imports: [
     BrowserModule,

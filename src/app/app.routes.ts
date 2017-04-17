@@ -7,7 +7,10 @@ import { ManufacturerComponent } from './manufacturer/manufacturer.component';
 import { FaqComponent } from './faq/faq.component';
 import { TestServiceComponent } from './test-service/test-service.component';
 import { HttpServiceComponent } from './http-service/http-service.component';
-
+import { PostComponent } from './post/post.component';
+import { RemapComponent } from './remap/remap.component';
+import { NrComponent } from './nr/nr.component';
+import { RdrComponent } from './rdr/rdr.component';
 export const Approute:Routes = [
     {
         path : '',
@@ -15,7 +18,26 @@ export const Approute:Routes = [
     },
         {
         path : 'user',
-        component : UserComponent
+        component: UserComponent,
+        children: [
+            {
+            path:'',
+            component : UserComponent
+        },
+        {
+        path: 'remap',
+        component: RemapComponent
+        },
+        {
+        path: 'rdr',
+        component: RdrComponent
+        },
+        {
+        path: 'nr',
+        component: NrComponent
+        }
+        ]
+        
     },
         {
         path : 'setup',
@@ -42,5 +64,9 @@ export const Approute:Routes = [
         {
         path : 'httpservice',
         component : HttpServiceComponent
+    },
+        {
+        path : 'posts',
+        component : PostComponent
     }
  ];
