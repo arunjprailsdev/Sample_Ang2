@@ -1,5 +1,5 @@
 export class TestService {
     getAuthors() : string[] {
-        return ["one","two"];
+        return ["one","two","three"];
     }
 }

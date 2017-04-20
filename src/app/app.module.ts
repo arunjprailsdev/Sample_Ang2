@@ -21,6 +21,7 @@ import { PostComponent } from './post/post.component';
 import { NrComponent } from './nr/nr.component';
 import { RemapComponent } from './remap/remap.component';
 import { RdrComponent } from './rdr/rdr.component';
+import { ApiComponent } from './api/api.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { RdrComponent } from './rdr/rdr.component';
     PostComponent,
     NrComponent,
     RemapComponent,
-    RdrComponent
+    RdrComponent,
+    ApiComponent
   ],
   imports: [
     BrowserModule,

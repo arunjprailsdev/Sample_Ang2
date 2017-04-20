@@ -11,6 +11,7 @@ import { PostComponent } from './post/post.component';
 import { RemapComponent } from './remap/remap.component';
 import { NrComponent } from './nr/nr.component';
 import { RdrComponent } from './rdr/rdr.component';
+import { ApiComponent } from './api/api.component';
 export const Approute:Routes = [
     {
         path : '',
@@ -22,7 +23,7 @@ export const Approute:Routes = [
         children: [
             {
             path:'',
-            component : UserComponent
+            component : RemapComponent
         },
         {
         path: 'remap',
@@ -68,5 +69,9 @@ export const Approute:Routes = [
         {
         path : 'posts',
         component : PostComponent
+    },
+    {
+        path : 'api',
+        component : ApiComponent
     }
  ];
